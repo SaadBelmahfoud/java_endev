@@ -3,10 +3,17 @@ public class Personne {
     private String prenom;
     private int age;
 
+    public static int getCount() {
+        return count;
+    }
+
+    static private int count;
+
     public Personne (String nom, String prenom, int age){
         this.nom = nom;
         this.prenom = prenom;
         this.age = age;
+        count++;
     }
 
     public Personne (){};
